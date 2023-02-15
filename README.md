@@ -102,4 +102,8 @@ DB_PASSWORD=pwdpwdpwdpwd
 
 And you can create a PR with some terraform change to trigger the action.
 
+Thanks
+=====
+
+I used this terraform action for the demo: https://github.com/dflook/terraform-github-actions
 
