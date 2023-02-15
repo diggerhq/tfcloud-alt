@@ -22,7 +22,6 @@ jobs:
         uses: dflook/terraform-plan@v1
         with:
           path: terraform_examples
-    with:
-      variables: |
-        db_password = "${{ secrets.DB_PASSWORD }}"
+          variables: |
+            db_password = "${{ secrets.DB_PASSWORD }}"
 
