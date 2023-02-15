@@ -1,8 +1,9 @@
 Introduction
 ======
 
-Do we really need terraform cloud? TerraformCloud, Spacelift and other cloud runners a dedicated CI/CD run terraform. Why are people using Terraform Cloud? 
-Why not run Terraform in Github Actions? For my usecase as a small startup it seems to me that relying on github actions should be enough. I might be missing something but it seems that I need from a terraform runner is the following flow:
+Do we really need terraform cloud? TerraformCloud, Spacelift and other cloud runners present dedicated CI/CD to run terraform. 
+
+Why are people using Terraform Cloud? Why not run Terraform in Github Actions? For my usecase as a small startup it seems to me that relying on github actions should be enough. I might be missing something but it seems that I need from a terraform runner is the following flow:
 
 - Runs terraform plan on every PR
 - Runs terraform apply on merge to master/main branch
