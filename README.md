@@ -9,13 +9,27 @@ from a terraform runner is the following for a basic flow:
 - Runs terraform apply on merge to master/main branch
 - Handle of concurrency by queining multiple applies together
 
-
+More advanced flows such as multiple environments and comment-to-apply can also be acheived as an extension of above. So why do we need a dedicated service
+to run our terraform ? 
 
 How to run
 =====
 
 Bring your own terraform
 -----
+
+If you have terraform already on github and you would like to use this then you can do the following:
+
+- Create directory `.github/workflows`
+- Create the following workflow for plans `.github/workflows/tfplan.yml`
+
+```
+```
+
+- Create the following workflow for applies `.github/workflows/tfapply.yml`
+
+```
+```
 
 
 Use sample repository
@@ -26,3 +40,11 @@ Roadmap
 ======
 
 
+FAQ
+=====
+
+- How can I implement atlantis workflow using this?
+
+- How to handle secrets and variables in terraform?
+
+- How do I introduce policy-as-code into my actions?
