@@ -35,9 +35,14 @@ If you have terraform already on github and you would like to use this then you 
 Use sample repository
 ------
 
+You can also play with this sample repository which contains sample code. To do this you need to fork the repository and set the following secrets:
 
-Roadmap
-======
+```
+AWS_ACCESS_KEY=xxxxx
+AWS_SECRET_ACCESS_KEY=yyyyyy
+```
+
+And yo ucan create a PR with some terraform change to trigger the action.
 
 
 FAQ
