@@ -96,16 +96,9 @@ You can also play with this sample repository which contains sample code. To do 
 ```
 AWS_ACCESS_KEY=xxxxx
 AWS_SECRET_ACCESS_KEY=yyyyyy
+DB_PASSWORD=pwdpwdpwdpwd
 ```
 
-And yo ucan create a PR with some terraform change to trigger the action.
+And you can create a PR with some terraform change to trigger the action.
 
 
-FAQ
-=====
-
-- How can I implement atlantis workflow using this?
-
-- How to handle secrets and variables in terraform?
-
-- How do I introduce policy-as-code into my actions?
