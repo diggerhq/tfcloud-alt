@@ -1,0 +1,30 @@
+name: Apply terraform plan
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    name: Apply terraform plan
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: terraform apply
+        uses: dflook/terraform-apply@v1
+        with:
+          path: terraform_examples
+          variables: |
+            db_password = "${{ secrets.DB_PASSWORD }}"
