@@ -1,3 +1,7 @@
+UPDATE
+======
+Please visit more mature repository here: https://github.com/diggerhq/digger
+
 Introduction
 ======
 
